@@ -1,8 +1,26 @@
 package palindromechecker;
+import java.util.Scanner;
 public class Palindromechecker{
+    
     public static void main(String[] args) {
-        System.out.println("Welcome to the Palindrome Checker Management System");
-        System.out.println("Version: 1.0");
-        System.out.println("System Intialized Successfully.");
+    Scanner sc=new Scanner(System.in);
+    System.out.print("Input Text");
+    String input=sc.nextLine();
+    boolean isPalindrome= true;
+    int n=input.length()-1;
+    for (int i=0;i<=n;i++){
+        if(input.charAt(i)!=input.charAt(n-i)){
+            isPalindrome=false;
+            break;
+        }
+ 
+        
     }
+    if(isPalindrome){
+        System.out.println("It is a palindrome ?"+isPalindrome);
+    }else{
+        System.out.println("it is a palindrome?"+isPalindrome);
+        }
+    };
+    
 }
