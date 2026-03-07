@@ -1,9 +1,12 @@
-package palindromechecker;
 import java.util.Scanner;
-public class Palindromechecker{
+
+public class Palindromechecker {
     public static void main(String[] args) {
 
-        String str = "madam";
+        Scanner sc = new Scanner(System.in);
+        System.out.print("Input Text: ");
+        String str = sc.nextLine();
+
         char[] ch = str.toCharArray();
 
         int start = 0;
@@ -25,4 +28,5 @@ public class Palindromechecker{
             System.out.println("The string is NOT a Palindrome.");
         }
     }
+}
 }
